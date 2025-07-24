@@ -1,0 +1,33 @@
+Movie Review and Recommendation Engine
+A data-driven engine that analyzes movie ratings, user preferences, and reviews to recommend personalized movie suggestions. Built using SQL and optionally Python for enhanced insights and visualization.
+Project Objective
+To design a system that:
+- Stores and analyzes movie ratings and user reviews
+- Identifies user preferences and trends
+- Generates personalized movie recommendations
+- Supports query-based search and filtering (e.g., by genre, rating, year)
+Tools & Technologies
+- **Database**: MySQL / PostgreSQL
+- **Languages**: SQL, Python (optional for ML-based recommendations)
+- **Libraries (optional)**: Pandas, NumPy, Matplotlib, Scikit-learn
+Database Schema
+Tables
+- **Users**: Stores user profiles
+- **Movies**: Movie metadata (title, genre, release year)
+- **Ratings**: User-movie ratings (scale 1 to 5)
+- **Reviews** *(optional)*: User-written text reviews for movies
+- **Genres**: Genre classification for movies
+Features
+Add/view users, movies, and ratings  
+Calculate average movie ratings  
+Identify top-rated movies by genre  
+Recommend movies based on user preferences  
+Search by genre, rating, year  
+Sample SQL Queries
+Top 5 Movies by Rating
+SELECT m.Title, ROUND(AVG(r.Rating), 2) AS AvgRating
+FROM Movies m
+JOIN Ratings r ON m.MovieID = r.MovieID
+GROUP BY m.MovieID
+ORDER BY AvgRating DESC
+LIMIT 5;
