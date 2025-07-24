@@ -26,9 +26,15 @@ GPA is calculated using the formula:
 ROUND(SUM(C.Credits * 
   
   CASE G.Grade
+    
     WHEN 'A' THEN 10
+    
     WHEN 'B' THEN 8
+    
     WHEN 'C' THEN 6
+    
     WHEN 'D' THEN 4
+    
     WHEN 'F' THEN 0
+  
   END)::DECIMAL / SUM(C.Credits), 2) AS GPA
