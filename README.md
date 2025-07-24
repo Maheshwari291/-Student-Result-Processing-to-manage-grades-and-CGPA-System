@@ -18,9 +18,13 @@ To create a relational database system that:
 - **Grades**: Stores grade details for each course
 - **Semesters**: Information about academic semesters
 - **StudentGrades**: Junction table linking students, courses, semesters, and grades
+
 **GPA/CGPA Calculation Logic**
+
 GPA is calculated using the formula:
+
 ROUND(SUM(C.Credits * 
+  
   CASE G.Grade
     WHEN 'A' THEN 10
     WHEN 'B' THEN 8
