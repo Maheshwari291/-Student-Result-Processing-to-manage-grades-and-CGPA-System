@@ -1,4 +1,4 @@
-**Student-Result-Processing-to-manage-grades-and-CGPA-System**
+**Student-Result-Processing-to-manage-grades-and-CGPA-System**&**Movie Review and Recommendation Engine**
 **Student Result Processing System**
 A SQL-based project designed to manage student grades, calculate GPA/CGPA, and generate academic performance reports using MySQL.
 **Project Objective**
